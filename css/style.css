@@ -427,7 +427,7 @@ button {
 /** banner section **/
 
 .full_bg {
-  background: url(../images/french-fries-2640743_1920.jpg);
+  background: url(../images/hot-dog-pickles-tomatoes-lettuce-white-background-fast-food-calorie-view-above-space-copy-banner-172801683.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -456,7 +456,7 @@ button {
 }
 
 .creative h1 {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 90px;
   color: #101010;
   font-weight: bold;
@@ -466,6 +466,7 @@ button {
   color: #101010;
   padding: 30px 0 55px 0;
   line-height: 30px;
+  font-size: 22px;
 }
 
 .creative .read_more {
@@ -1200,4 +1201,22 @@ ul.social_icon li a i:hover {
 
 .portfolio_page .footer {
   margin-top: 60px;
+}
+
+@media (max-width: 480px) {
+  .creative h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .creative p {
+    font-size: 16px;
+  }
+
+  .responsive_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
