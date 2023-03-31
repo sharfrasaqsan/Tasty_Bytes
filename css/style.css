@@ -980,6 +980,12 @@ button {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .pro_file i img {
+    width: 40%;
+  }
+}
+
 .pro_file h4 {
   margin-top: 10px;
   color: #2d2d2d;
