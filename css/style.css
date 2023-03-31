@@ -3,11 +3,9 @@ File Name: style.css
 ---------------------------------------------------------------------*/
 
 :root {
-  --color-emerald-green: #50c878;
   --color-forest-green: #228b22;
   --color-kelly-green: #4cbb17;
   --color-lime-green: #32cd32;
-  --color-mint-green: #98fb98;
 }
 
 /*--------------------------------------------------------------------- 
@@ -251,7 +249,7 @@ button {
 
 .read_more {
   font-size: 16px;
-  background: #363636;
+  background: var(--color-kelly-green);
   max-width: 204px;
   width: 100%;
   transition: ease-in all 0.5s;
@@ -266,8 +264,18 @@ button {
 }
 
 .read_more:hover {
-  background: #fdc001;
+  background: var(--color-forest-green);
   color: #fff;
+}
+
+.read_more_new {
+  background: black;
+  color: #fff;
+}
+
+.read_more_new:hover {
+  background: white;
+  color: black;
 }
 
 .text_align_left {
@@ -427,7 +435,7 @@ button {
 /** banner section **/
 
 .full_bg {
-  background: url(../images/hot-dog-pickles-tomatoes-lettuce-white-background-fast-food-calorie-view-above-space-copy-banner-172801683.jpg);
+  background: url(../images/banner_new.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -557,8 +565,8 @@ button {
 
 #banner1 .carousel-control-prev,
 #banner1 .carousel-control-next {
-  width: 76px;
-  height: 76px;
+  width: 60px;
+  height: 60px;
   background-color: #fff;
   color: #000;
   font-size: 40px;
@@ -582,7 +590,7 @@ button {
 #banner1 .carousel-control-prev:focus,
 #banner1 .carousel-control-prev:hover {
   color: #fff;
-  background: #fdc001;
+  background: var(--color-forest-green);
 }
 
 /** end banner section **/
@@ -590,7 +598,7 @@ button {
 /** appointment  **/
 
 .appointment {
-  background: #fdc001;
+  background: var(--color-lime-green);
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -605,11 +613,11 @@ button {
   width: 100%;
   height: 55px;
   background: #ffffff;
-  color: #d0d0cf;
+  color: black;
   font-size: 15px;
   font-weight: normal;
   border: inherit;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 .main_form .textarea {
@@ -619,16 +627,16 @@ button {
   color: #d0d0cf !important;
   font-size: 15px;
   font-weight: normal;
-  padding: 30px 25px 15px 25px;
+  padding: 30px 25px 0px 25px;
   border: inherit;
   height: 89px;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 .main_form .send_btn {
   font-size: 16px;
   transition: ease-in all 0.5s;
-  background-color: #363636;
+  background-color: black;
   text-transform: uppercase;
   color: #fff;
   max-width: 204px;
@@ -642,10 +650,10 @@ button {
 }
 
 .main_form .send_btn:hover {
-  background-color: #fdc001;
+  background-color: white;
   transition: ease-in all 0.5s;
   box-shadow: 0 0 16px 3px #635d5d38;
-  color: #fff;
+  color: black;
 }
 
 #request *::placeholder {
@@ -657,6 +665,29 @@ button {
   padding: 20px;
 }
 
+.left-contact {
+  border-right: 2px solid #fff;
+  padding-right: 30px;
+}
+
+.right-contact {
+  border-left: 2px solid #fff;
+  padding-left: 30px;
+}
+
+@media (max-width: 480px) {
+  .left-contact {
+    border-right: 0;
+    padding-right: 15px;
+  }
+  
+  .right-contact {
+    border-left: 0;
+    padding-left: 15px;
+    margin-top: 5rem;
+  }
+}
+
 /** end appointment  **/
 
 /** services section **/
@@ -664,6 +695,7 @@ button {
 .services {
   background: #fff;
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .services .titlepage {
@@ -702,9 +734,21 @@ button {
 }
 
 #ho_shad:hover .read_more {
-  background: #fdc001;
+  background: var(--color-forest-green);
   transition: ease-in all 0.5s;
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  .services_box {
+    text-align: justify;
+  }
+
+  .button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /** end services section **/
@@ -715,7 +759,6 @@ button {
   background: #2d2d2d;
   padding-bottom: 60px;
   padding-top: 90px;
-  margin-top: 90px;
 }
 
 .priceing .titlepage h2 {
@@ -860,7 +903,7 @@ button {
 /** about section **/
 
 .about {
-  background: #fdc001;
+  background: var(--color-lime-green);
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -993,7 +1036,7 @@ button {
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-prev:hover {
   color: #000;
-  background: #fdc001;
+  background: var(--color-forest-green);
 }
 
 /** end clients **/
