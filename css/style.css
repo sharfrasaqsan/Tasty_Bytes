@@ -49,7 +49,7 @@ html {
 body {
   color: #666666;
   font-size: 14px;
-  font-family: "Pacifico", cursive;
+  font-family: "Verdana", sans-serif;
   line-height: 1.80857;
   font-weight: normal;
   overflow-x: hidden;
@@ -680,7 +680,7 @@ button {
     border-right: 0;
     padding-right: 15px;
   }
-  
+
   .right-contact {
     border-left: 0;
     padding-left: 15px;
@@ -726,6 +726,10 @@ button {
   line-height: 30px;
   padding-top: 23px;
   padding-bottom: 30px;
+}
+
+.image-height {
+  height: 240px;
 }
 
 #ho_shad:hover.services_box figure img {
@@ -791,7 +795,7 @@ button {
 }
 
 .our_pri {
-  background: #fdc001;
+  background: var(--color-lime-green);
   padding: 30px 20px 45px 20px;
   position: relative;
   z-index: 99;
@@ -870,12 +874,8 @@ button {
   position: relative;
 }
 
-.yellow {
-  background: #fdc001 !important;
-}
-
 .nostrud {
-  padding: 20px 20px 0 20px;
+  padding-top: 2rem;
 }
 
 .nostrud h3 {
@@ -1069,17 +1069,6 @@ button {
   text-align: left;
 }
 
-.hedingh3 h3::before {
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 15px;
-  background: #fdc001;
-  top: 5px;
-  border-radius: 20px;
-  left: -20px;
-}
-
 .hedingh3 p {
   color: #fff;
   text-align: left;
@@ -1120,7 +1109,7 @@ ul.menu_footer li a:hover {
 .subsci_btn {
   font-size: 16px;
   transition: ease-in all 0.5s;
-  background-color: #fdc001;
+  background-color: var(--color-kelly-green);
   text-transform: uppercase;
   color: #fff;
   display: block;
@@ -1136,7 +1125,7 @@ ul.menu_footer li a:hover {
 
 .subsci_btn:hover {
   transition: ease-in all 0.5s;
-  color: #fdc001;
+  color: var(--color-forest-green);
   background-color: #fff;
 }
 
@@ -1158,7 +1147,7 @@ ul.top_infomation li {
 
 ul.top_infomation li i {
   margin-right: 5px;
-  color: #fdc001;
+  color: var(--color-kelly-green);
   text-align: center;
 }
 
@@ -1167,7 +1156,7 @@ ul.top_infomation li a {
 }
 
 ul.top_infomation li a:hover {
-  color: #fdc001;
+  color: var(--color-forest-green);
 }
 
 .copyright {
@@ -1178,7 +1167,7 @@ ul.top_infomation li a:hover {
 }
 
 .follow h3 {
-  color: #fdc001;
+  color: var(--color-lime-green);
   font-size: 23px;
   padding-bottom: 20px;
   line-height: 23px;
@@ -1205,7 +1194,7 @@ ul.social_icon li a i {
 ul.social_icon li a i:hover {
   color: #fff;
   transition: ease-in all 0.5s;
-  background: #fdc001;
+  background: var(--color-forest-green);
 }
 
 .copyright p {
@@ -1222,7 +1211,7 @@ ul.social_icon li a i:hover {
 }
 
 .copyright a:hover {
-  color: #fdc001;
+  color: var(--color-forest-green);
 }
 
 /** end footer **/
