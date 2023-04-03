@@ -330,13 +330,13 @@ button {
 
 .logo a {
   color: #363636;
-  font-size: 41px;
+  font-size: 40px;
   font-weight: 600;
 }
 
 .site-navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -349,14 +349,15 @@ button {
 
 .site-navbar ul li a {
   color: #363636;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .site-navbar ul li {
-  padding-right: 70px;
+  padding-right: 45px;
 }
 
 .site-navbar ul li:last-child {
@@ -604,7 +605,7 @@ button {
 }
 
 .appointment .titlepage p {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .main_form .form_control {
@@ -730,6 +731,14 @@ button {
 
 .image-height {
   height: 240px;
+}
+
+.services_container {
+  margin-bottom: 2rem;
+}
+
+.services_image {
+  width: 70%;
 }
 
 #ho_shad:hover.services_box figure img {
@@ -1254,9 +1263,7 @@ ul.social_icon li a i:hover {
 .inner_page .full_bg {
   height: 100%;
 }
-.inner_page .about {
-  margin-top: 90px;
-}
+
 .inner_page .appointment {
   margin-top: 90px;
 }
